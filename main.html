@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Killian Torrell | Fullstack developer</title>
+</head>
+<body>
+    <div class="form_wrapp">
+        <form id="form__contact" action="#" class="form__enter">
+
+            <label for="name" class="form__label _cursor aos-init" data-aos="fade-up">
+                <span class="input_line"></span>
+                <input id="name" type="text" name="name" class="form__input form_style" placeholder="Name*" required="">
+                <span class="input-placeholder">Name*</span>
+            </label>
+
+            <label for="email" class="form__label _cursor aos-init" data-aos="fade-up">
+                <span class="input_line"></span>
+                <input id="email" type="email" name="mail" class="form__input form_style" placeholder="E-mail*" required="">
+                <span class="input-placeholder">E-mail*</span>
+            </label>
+
+            <label for="message" class="form__label _cursor aos-init" data-aos="fade-up">
+                <span class="input_line"></span>
+                <textarea name="message" id="message" class="form__input form__message form_style" placeholder="Message"></textarea>
+                <span class="input-placeholder">Message</span>
+            </label>
+            <input type="hidden" name="send" value="Сообщение отправлено с формы контактов!">
+
+            <button type="submit" class="form__submit form_style _cursor aos-init" data-aos="fade-up">send</button>
+
+        </form>
+    </div>
+</body>
+</html>
