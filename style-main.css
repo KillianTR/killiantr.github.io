@@ -1,0 +1,32 @@
+:root {
+    --font-druk-wide-bold: 'DrukWideBold', sans-serif;
+    --font-druk-wide-medium: 'DrukWideMedium', sans-serif;
+    --font-montserrat: 'Montserrat-Regular', sans-serif;
+    --color-font-grey: #5c5c5c;
+}
+
+html, body {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-druk-wide-bold);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    cursor: crosshair;
+}
+
+form {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.form_enter {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+
+}
