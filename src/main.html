@@ -1,39 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/killiantr.github.io/Index/images/logo.png" type="image/logo">
-    <link rel="stylesheet" href="styles/style-main.css">
-    <title>Killian Torrell | Fullstack developer</title>
-</head>
-<body>
-    <div class="form_wrapp">
-        <form id="form__contact" action="#" class="form__enter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Fullscreen Menu | @Codegrid</title>
+    <link rel="stylesheet" href="./css/style-main.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/mclaren-logo.png">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo"><img src="./assets/logo.jpg" alt="" /></div>
+        <p class="menu-open">Menu</p>
+      </nav>
 
-            <label for="name" class="form__label _cursor aos-init" data-aos="fade-up">
-                <span class="input_line"></span>
-                <input id="name" type="text" name="name" class="form__input form_style" placeholder="Name*" required="">
-                <span class="input-placeholder">Name*</span>
-            </label>
+      <section class="hero">
+        <div class="header">
+          <h1>McLaren</h1>
+          <sup>&copy;</sup>
+        </div>
+      </section>
 
-            <label for="email" class="form__label _cursor aos-init" data-aos="fade-up">
-                <span class="input_line"></span>
-                <input id="email" type="email" name="mail" class="form__input form_style" placeholder="E-mail*" required="">
-                <span class="input-placeholder">E-mail*</span>
-            </label>
+      <div class="menu">
+        <div class="menu-nav"><p class="menu-close">Close</p></div>
 
-            <label for="message" class="form__label _cursor aos-init" data-aos="fade-up">
-                <span class="input_line"></span>
-                <textarea name="message" id="message" class="form__input form__message form_style" placeholder="Message"></textarea>
-                <span class="input-placeholder">Message</span>
-            </label>
-            <input type="hidden" name="send" value="Pronto se te enviará un correo">
+        <div class="menu-col menu-img">
+          <img id="img-1" src="./assets/hero.jpg" alt="" />
+          <img id="img-2" src="./assets/hero.jpg" alt="" />
+          <img id="img-3" src="./assets/hero.jpg" alt="" />
+          <!-- <img id="img-4" src="./assets/hero.jpeg" alt="" /> -->
+        </div>
 
-            <button type="submit" class="form__submit form_style _cursor aos-init" data-aos="fade-up">send</button>
+        <div class="menu-col menu-items">
+          <div class="menu-logo"><img src="./assets/logo.jpg" alt="" /></div>
 
-        </form>
+          <div class="menu-links">
+            <div class="menu-link">
+              <p><a href="#">About</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Story</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Projects</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Releases</a></p>
+            </div>
+          </div>
+
+          <div class="menu-footer">
+            <div class="menu-sub-col">
+              <div class="menu-sub-item"><p>Follow</p></div>
+              <div class="menu-sub-item"><p>McLaren</p></div>
+              
+              <br />
+              <div class="menu-sub-item"><p>Explore</p></div>
+              <div class="menu-sub-item"><p>McLaren</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Contact Us</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Our Location</p></div>
+              <br />
+            </div>
+            <div class="menu-sub-col">
+              <div class="menu-sub-item" onclick="openLink('https://www.instagram.com/mclaren')"><p >Instagram</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://www.youtube.com/@McLaren')"><p>Youtube</p></div>
+              <br />
+              <div class="menu-sub-item"><p>The Official McLaren Website</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Email</p></div>
+              <br />
+              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>McLaren Techonology Center</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>Chertsey Rd</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>United Kingdom</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>Woking GU21 4YH</p></div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script>
+      function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/tilt.js"></script>
+  </body>
 </html>
