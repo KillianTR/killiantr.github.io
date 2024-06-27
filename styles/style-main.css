@@ -10,7 +10,6 @@ body {
   height: 100%;
   font-family: "Mersad";
   background: #000;
-  overflow: hidden;
 }
 
 img {
@@ -192,5 +191,11 @@ nav {
 @media (max-width: 900px) {
   .menu-img {
     display: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  html, body {
+    overflow: hidden;
   }
 }
