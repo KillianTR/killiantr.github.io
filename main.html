@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Fullscreen Menu | @Codegrid</title>
     <link rel="stylesheet" href="styles/style-main.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/mclaren-logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/logo-index.png">
   </head>
   <body>
     <div class="container">
       <nav>
-        <div class="logo"><img src="./assets/logo.jpg" alt="" /></div>
+        <div class="logo"><img href="/killiantr.github.io/index.html" src="./assets/logo-index.png" alt="" /></div>
         <p class="menu-open">Menu</p>
       </nav>
 
       <section class="hero">
         <div class="header">
-          <h1>McLaren</h1>
-          <sup>&copy;</sup>
+          <h1>Killian Torrell</h1>
         </div>
       </section>
 
@@ -25,24 +24,24 @@
         <div class="menu-nav"><p class="menu-close">Close</p></div>
 
         <div class="menu-col menu-img">
-          <img id="img-1" src="./assets/hero.jpg" alt="" />
-          <img id="img-2" src="./assets/hero.jpg" alt="" />
-          <img id="img-3" src="./assets/hero.jpg" alt="" />
-          <!-- <img id="img-4" src="./assets/hero.jpeg" alt="" /> -->
+          <img id="img-1" src="./assets/killian.jpg" alt="" />
+          <img id="img-2" src="./assets/killian.jpg" alt="" />
+          <img id="img-3" src="./assets/killian.jpg" alt="" />
+          <!-- <img id="img-4" src="./assets/killian.jpg" alt="" /> -->
         </div>
 
         <div class="menu-col menu-items">
-          <div class="menu-logo"><img src="./assets/logo.jpg" alt="" /></div>
+          <div class="menu-logo"><img src="./assets/logo-index.png" alt="" /></div>
 
           <div class="menu-links">
             <div class="menu-link">
               <p><a href="#">About</a></p>
             </div>
-            <div class="menu-link">
+            <!-- <div class="menu-link">
               <p><a href="#">Story</a></p>
-            </div>
+            </div> -->
             <div class="menu-link">
-              <p><a href="#">Projects</a></p>
+              <p><a href="/killiantr.github.io/projects.html">Projects</a></p>
             </div>
             <div class="menu-link">
               <p><a href="#">Releases</a></p>
@@ -52,29 +51,16 @@
           <div class="menu-footer">
             <div class="menu-sub-col">
               <div class="menu-sub-item"><p>Follow</p></div>
-              <div class="menu-sub-item"><p>McLaren</p></div>
-              
+              <div class="menu-sub-item"><p>Killian Torrell</p></div>
               <br />
-              <div class="menu-sub-item"><p>Explore</p></div>
-              <div class="menu-sub-item"><p>McLaren</p></div>
-              <br />
-              <div class="menu-sub-item"><p>Contact Us</p></div>
-              <br />
-              <div class="menu-sub-item"><p>Our Location</p></div>
+              <div class="menu-sub-item"><p>Contact me</p></div>
               <br />
             </div>
             <div class="menu-sub-col">
-              <div class="menu-sub-item" onclick="openLink('https://www.instagram.com/mclaren')"><p >Instagram</p></div>
-              <div class="menu-sub-item" onclick="openLink('https://www.youtube.com/@McLaren')"><p>Youtube</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://www.linkedin.com/in/killiantorrell/')"><p >LinkedIn</p></div>
+              <div class="menu-sub-item" onclick="openLink('https://www.behance.net/vznumdis')"><p>Behance</p></div>
               <br />
-              <div class="menu-sub-item"><p>The Official McLaren Website</p></div>
-              <br />
-              <div class="menu-sub-item"><p>Email</p></div>
-              <br />
-              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>McLaren Techonology Center</p></div>
-              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>Chertsey Rd</p></div>
-              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>United Kingdom</p></div>
-              <div class="menu-sub-item" onclick="openLink('https://maps.app.goo.gl/DwYWYMYbsweDT3Ng9')"><p>Woking GU21 4YH</p></div>
+              <div class="menu-sub-item" id="email-link"><p>Email</p></div>
               <br />
             </div>
           </div>
@@ -86,6 +72,12 @@
       function openLink(url) {
             window.open(url, '_blank');
         }
+    </script>
+
+    <script>
+      document.getElementById('email-link').addEventListener('click', function() {
+            window.location.href = 'killiantorrell@gmail.com';
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
